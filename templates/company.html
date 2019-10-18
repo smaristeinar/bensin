@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+
+{% block body %}
+<table>
+<tbody>
+  <tr>
+    <th>Fyrirtæki</th>
+    <th>staður</th>
+  </tr>
+
+{% for items in data["results"] %}
+  {% if items["company"] == name %}
+  <tr>
+    <td><a href="/moreinfo/{{items["key"]}}">{{items["company"]}}</a></td>
+    <td>{{items["name"]}}</td>
+  </tr>
+  {% endif %}
+{% endfor %}
+</tbody>
+</table>
+{% endblock %}

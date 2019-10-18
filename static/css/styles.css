@@ -1,3 +1,91 @@
-h1{
-  color: blue;
+body{
+  margin: auto;
+  width: 1080px;
+  background-color: #F8F8FF;
+
 }
+
+.blockbody{
+  text-align: center;
+  border-radius: 10px;
+  border: 3px solid pink;
+
+}
+.header{
+  text-align: center;
+}
+.wrapper2{
+  display: block;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lowstpricecard{
+  display: block;
+  width: auto;
+  text-align: center;
+  background-color: yellow;
+  border-radius: 10px;
+  border:3px solid pink;
+  padding: 30px;
+
+}
+
+.takki{
+  padding: 30px;
+  margin: 10px;
+
+}
+
+.takki > a {
+  border: 3px solid pink;
+  color: pink;
+  background: black;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: black;
+}
+
+.stod{
+  background-color: grey;
+  margin:30px;
+  padding: 10px;
+  border: 3px solid pink;
+  border-radius: 10px;
+}
+.stod:hover{
+  background-color: black;
+  border: 3px solid red;
+
+}
+
+
+
+.merki{
+  display: inline;
+  width: 100px;
+  height: 100px;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #bbb;
+    text-align: left;
+    padding: 8px;
+    width: 50%;
+}
+tr:nth-child(even) {
+    background-color: #ddd;

@@ -6,5 +6,20 @@
 
 
 {% block body %}
-<h1>helloworld</h1>
+<div class="wrapper">
+{%for i in stodvar%}
+<div class="stod">
+  <a href="company/{{i[0]}}"><img class="merki" src="static/{{i[1]}}" alt="{{i[0]}}"></a>
+</div>
+{% endfor %}
+
+</div>
+<div class="wrapper2">
+<div class="lowstpricecard">
+  <h1>Bestaverð</h1>
+  <h3>{{bensin}}</h3>
+  <h3>{{disel}}</h3>
+  <h2>síðastuppfært: {{data["timestampPriceCheck"] | format_time}}</h2>
+</div>
+</div>
 {% endblock %}
